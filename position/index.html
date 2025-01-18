@@ -1,39 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peso</title>
+    <title>CSS Position Example</title>
     <style>
-        .box {
-            width: 200px;
-            /* height: 200px; */
-            border: 1px dashed gray;
-            margin: auto;
-            padding: 10px;
-            background-color: antiquewhite;
-        }
-        .card {
-            width: 100px;
-            height: 500px;
-            border: 1px dashed gray;
-            margin: 1px auto 1px auto;
-            padding: 10px;
-            background-color: rgb(243, 216, 180);
-            border-radius: 5px;
-        }
+body {
+    background: teal; /* Updated background color */
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+}
 
+.container {
+    height: 500px;
+    position: relative;
+    border: 1px solid black;
+    padding: 100px; /* Combined padding */
+    margin: 100px; /* Combined margin */
+    background: bisque; /* Updated background color */
+}
 
+.static-box {
+    position: static;
+    background: lightgray;
+    padding: 10px;
+}
 
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: lightblue;
+    padding: 20px; /* Combined padding */
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: coral;
+    padding: 30px; /* Updated padding */
+    border-radius: 5px; /* Added border-radius */
+}
+
+.fixed-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: yellowgreen;
+    padding: 30px; /* Updated padding */
+    border-radius: 5px; /* Added border-radius */
+}
+
+.sticky-box {
+    position: sticky;
+    top: 10px;
+    background: orange;
+    padding: 10px;
+}
+    .space{
+        padding: 200px 0 200px 0;
+        border-bottom: 1px solid tan;
+    }
     </style>
-</head>
-<body>
-    <div class="box">
-        <div class="card card1"></div>
-        <div class="card card2"></div>
-        <div class="card card3"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-    </div>
-</body>
-</html>
+  </head>
+  <body>
+    <div class="container">
+      <div class="static-box">Static (default)</div>
+      <div class="relative-box">Relative</div>
+      <div class="absolute-box">Absolute</div>
+      <div class="sticky-box">Sticky (Scroll to see)</div>
+      <div class="fixed-box">Fixed</div>
+    </div> 
+    
+    <div class="space">Scroll ME</div>
+    <div class="space">Scroll ME</div>
+  
+  </body>
