@@ -1,0 +1,86 @@
+<!-- ===============================================================
+    flex    -> grow shrink baisis
+    grow    : grow the items in large windows: fill the windows;
+    shrink  : shrink items behave in smalll windows
+    basis   : kind of min-width, but maintain the aspect-ratio 
+              And Behave as Flex while compress the windows
+              and Stay min-width even if the windows Big
+=================================================================-->
+
+<!--------------------------
+    flex:        1 1 0; 
+-----------------------------
+    flex-grow:   1;
+    flex-shrink: 1;
+    flex-basis:  0;
+------------------------------>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - grow, shrink, basis</title>
+    <style>
+        .flex {
+            display: flex;
+
+        }
+
+        /* .items{flex:1;} */
+
+        .item1 {
+            flex: 1 1 0%;
+        }
+
+        .item2 {
+            flex: 2 1 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container flex">
+        <div class="items item1">Ashik Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, neque? Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur officia animi sequi natus eaque
+            consequuntur nostrum fugiat similique quasi numquam, explicabo ullam obcaecati dicta debitis molestiae quae,
+            vero ad fuga vel molestias perferendis. Suscipit vel delectus blanditiis quo! Sequi numquam cum unde sit
+            quaerat modi ullam? Odit omnis rem ea consequuntur. Quisquam distinctio suscipit voluptas nostrum
+            architecto, ea debitis id tempore ratione odio? Explicabo, blanditiis? Soluta, magnam. Ipsa fuga animi
+            facilis non laboriosam placeat tempora excepturi pariatur ullam numquam quia ipsam, voluptatem, nulla
+            praesentium, debitis illum commodi odio expedita. Eveniet alias pariatur porro asperiores perferendis! Culpa
+            explicabo delectus pariatur!</div>
+        <div class="items item2">Fshik</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container flex">
+        <div class="items item1"> Item 1</div>
+        <div class="items item2"> Item 2</div>
+    </div>
+
+
+
+
+
+    <style>
+        .flex-container {
+            background-color: rgb(227, 180, 197);
+            padding: 10px;
+            min-height: 400px;
+        }
+
+        .items {
+            padding: 20px;
+            background-color: bisque;
+            border: 1px dashed gray;
+
+        }
+    </style>
+</body>
+
+</html>

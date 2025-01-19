@@ -29,7 +29,13 @@
             
             /* multiple raw  */
             align-content: space-between; /*| space-around | space-evently | center | flex-start | flex-end ;*/
+        }
 
+        .second-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center; /*Single Raw*/
+            gap:10px;
         }
     </style>
 </head>
@@ -51,6 +57,14 @@
   
     </div>
 
+<br>
+    <div class="flex-container second-flex">
+        <div class="items item1">Ashik</div>
+        <div class="items item2">Fshik</div>
+        <div class="items item3">Gshik</div>
+        <div class="items item4">Xshik</div>  
+    </div>
+
 
 
 
@@ -59,7 +73,7 @@
         .flex-container{
             background-color: rgb(227, 180, 197);
             padding: 10px;
-            height: 400px;
+            min-height: 400px;
         }
         .items{
             padding: 20px;
