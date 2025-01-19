@@ -1,0 +1,73 @@
+<!-- 
+    display: flex
+    flex-wrap: wrap ; nowrap;
+    gap: 10px 10px;
+
+    justify-content: space-between; | space-around | space-evently | center | flex-start | flex-end ;
+    align-items: flex-start; | flex-end | center | stretch | baseline ;
+    align-content: space-between; | space-around | space-evently | center | flex-start | flex-end ;
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display - Child</title>
+    <style>
+        .first-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap:10px;
+        }
+        
+         .item10{
+            order:-1; /*default : 0*/
+         }
+         .items{
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+
+         }
+          .item1{
+            /* flex-grow: 1; */
+          }
+    </style>
+</head>
+<body>
+    <div class="flex-container first-flex">
+        <div class="items item1">1 one consectetur adipisicing elit. Blanditiis, laudantium.</div>
+        <div class="items item2">2</div>  
+        <div class="items item3">3 one two</div>
+        <div class="items item4">4 three</div>
+    <!--     <div class="items item5">5 4</div>  
+        <div class="items item6">6 three one two</div>
+        <div class="items item7">7 4</div>  
+        <div class="items item8">8 one two</div>
+        <div class="items item9">9 three</div>
+        <div class="items item10">10 4</div>   -->
+  
+    </div>
+
+
+
+
+
+    <style>
+        .flex-container{
+            background-color: rgb(227, 180, 197);
+            padding: 10px;
+            height: 400px;
+        }
+        .items{
+            padding: 20px;
+            background-color: bisque;
+            border: 1px dashed gray;
+
+        }
+    </style>
+</body>
+</html>
