@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - Nav</title>
+    <style>
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            font-family: cursive;
+            font-size: 1rem;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 0 15px;
+        }
+
+        .navbar a,
+        a:visited {
+            text-decoration: none;
+            color: initial;
+        }
+
+         /* Form  */
+         section{
+            display: flex;
+            justify-content: center;
+         }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0;
+            width: 50%;
+        }
+        form input{
+            padding: 10px;
+            color: #555;
+        }
+        input:focus{
+            border-color: none;
+            outline: none;
+        }
+        input[type="submit"]{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="flex-01.html">Index 1</a></li>
+            <li><a href="flex-02.html">Index 2</a></li>
+            <li><a href="flex-03.html">Index 3</a></li>
+            <li><a href="flex-04.html">Index 4</a></li>
+            <li><a href="flex-05.html">Index 5</a></li>
+            <li><a href="flex-06.html">Index 6</a></li>
+        </ul>
+        <div class="logo"><a href="#0">FlexNav</a></div>
+    </nav>
+
+    <br> <br> <br>
+
+    <section>
+        <form action="subscribe">
+            <h1>Enter Your Email Adress</h1>
+            <input type="text" placeholder="your name">
+            <input type="email" name="subscribe" id="subscribe" placeholder="email" required>
+            <input type="password" name="subscrib" id="" placeholder="password">
+            <input type="submit" value="Subscribe!">
+        </form>
+    </section>
+</body>
+
+</html>
