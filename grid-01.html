@@ -1,0 +1,72 @@
+<!-- 
+    grid:
+    grid-templete-column: 200px 200px 200px;
+    grid-templete-column: repeat(3, 200px);
+    grid-templete-column: repeat(3, 1fr);
+    grid-templete-row: 150px;
+    justify-content:
+-->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid - Basic</title>
+</head>
+<body>
+
+    <h1>This is Calender</h1>
+    <div class="container">
+        <div class="item date1 date">S</div>
+        <div class="item date2 date">S</div>
+        <div class="item date3 date">M</div>
+        <div class="item date4 date">T</div>
+        <div class="item date5 date">W</div>
+        <div class="item date6 date">T</div>
+        <div class="item date7 date">F</div>
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+        <div class="item item11">11</div>
+        <div class="item item12">12</div>
+        <div class="item item13">13</div>
+        <div class="item item14">14</div>
+        <div class="item item15">15</div>
+        <div class="item item16">16</div>
+        <div class="item item17">17</div>
+        <div class="item item18">18</div>
+        <div class="item item19">19</div>
+        <div class="item item20">20</div>
+    </div>
+    <style>
+        .container{
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap:5px;
+        }
+        .item{
+            height: 5rem;
+            border: 1px solid rgb(89, 178, 255);
+            border-radius: 5px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1px;
+            
+        }
+        .date{
+            background-color: black
+            ;color:white;
+        }
+    </style>
+</body>
+</html>
