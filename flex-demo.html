@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - Example</title>
+    <style>
+        .section{
+            display: flex;
+            flex-wrap: wrap; 
+            text-align: center;          
+        }
+        .section> * {
+            flex: 1 100%;
+        }
+        .aside{
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="header">Header</div>
+        <div class="aside aside1">Aside 1</div>
+        <div class="aside aside2">Aside 2</div>
+        <footer>Footer</footer>
+
+
+    </div>
+
+    <style>
+            .section{background-color: rgb(253, 241, 234);}
+            .section>* { padding: 10px; }
+            .header {background: #a1efef;}
+            .aside.aside1 {background: #f7b7b7; }
+            .aside.aside2 {background: #c4c4ff;}
+            footer {background: #a1efef;}
+    </style>
+</body>
+
+</html>
