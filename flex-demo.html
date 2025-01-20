@@ -6,23 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex - Example</title>
     <style>
-        .section{
+        .section {
             display: flex;
-            flex-wrap: wrap; 
-            text-align: center;          
+            flex-wrap: wrap;
+            text-align: center;
         }
-        .section> * {
+
+        .section>* {
             flex: 1 100%;
         }
-        .aside{
+
+        .aside {
             flex: 2;
         }
+
+        .main {
+            flex: 3;
+        }
+
+        .main { order: 1;}
+        footer {order: 3; }
+        .aside.aside2 {order: 2;}
     </style>
 </head>
 
 <body>
     <div class="section">
         <div class="header">Header</div>
+        <div class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim sunt ab minus est
+            natus soluta debitis tempore quis voluptates dicta optio voluptatem, magni fugit. Veritatis placeat cum modi
+            optio porro odio deserunt aliquid sequi reprehenderit pariatur temporibus unde enim quidem facere,
+            perferendis saepe dolorem cupiditate consectetur accusamus iste hic!</div>
         <div class="aside aside1">Aside 1</div>
         <div class="aside aside2">Aside 2</div>
         <footer>Footer</footer>
@@ -31,12 +45,29 @@
     </div>
 
     <style>
-            .section{background-color: rgb(253, 241, 234);}
-            .section>* { padding: 10px; }
-            .header {background: #a1efef;}
-            .aside.aside1 {background: #f7b7b7; }
-            .aside.aside2 {background: #c4c4ff;}
-            footer {background: #a1efef;}
+        .section {
+            background-color: rgb(253, 241, 234);
+        }
+
+        .section>* {
+            padding: 10px;
+        }
+
+        .header {
+            background: #a1efef;
+        }
+
+        .aside.aside1 {
+            background: #f7b7b7;
+        }
+
+        .aside.aside2 {
+            background: #c4c4ff;
+        }
+
+        footer {
+            background: #a1efef;
+        }
     </style>
 </body>
 
